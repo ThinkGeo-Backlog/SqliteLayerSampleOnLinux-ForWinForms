@@ -5,6 +5,7 @@ using ThinkGeo.MapSuite;
 using ThinkGeo.MapSuite.Layers;
 using ThinkGeo.MapSuite.WinForms;
 using ThinkGeo.MapSuite.Styles;
+using ThinkGeo.MapSuite.Drawing;
 
 namespace ThinkGeo.MapSuite.Samples
 {
@@ -26,7 +27,7 @@ namespace ThinkGeo.MapSuite.Samples
             string sqliteFullFileName = Path.GetFullPath(Path.Combine(baseDirectory, "../../App_Data/USStates.sqlite"));
 
             SqliteFeatureLayer sqliteFeatureLayer = new SqliteFeatureLayer($"Data Source={sqliteFullFileName};Version=3;", "table_name", "id", "geometry");
-			sqliteFeatureLayer.ZoomLevelSet.ZoomLevel01.DefaultAreaStyle = AreaStyles.State1;
+			sqliteFeatureLayer.ZoomLevelSet.ZoomLevel01.DefaultAreaStyle = AreaStyles.CreateSimpleAreaStyle(GeoColor.FromArgb(255, 233, 232, 214), GeoColor.FromArgb(255, 156, 155, 154), 2);
 			sqliteFeatureLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
 
             overlay.Layers.Add(sqliteFeatureLayer);
