@@ -1,7 +1,7 @@
 # SqliteLayerSampleOnLinux-ForWinForms
 
 ### Description
-Working...
+The purpose of this sample is to show how to use SQLite as map data source. 
 
 ![screen](https://raw.githubusercontent.com/ThinkGeo/SqliteLayerSampleOnLinux-ForWinForms/master/screenshot.png)
 
