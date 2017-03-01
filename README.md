@@ -1,9 +1,9 @@
-# SqliteSample-ForLinux
+# SqliteLayerSampleOnLinux-ForWinForms
 
 ### Description
 Working...
 
-![screen](https://raw.githubusercontent.com/ThinkGeo/SqliteLayerSample-ForLinux/master/screenshot.png)
+![screen](https://raw.githubusercontent.com/ThinkGeo/SqliteLayerSampleOnLinux-ForWinForms/master/screenshot.png)
 
 ### Requirements
 This sample makes use of the following NuGet Packages.
